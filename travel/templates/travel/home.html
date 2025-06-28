@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+<link rel="icon" type="image/jpeg" href="{% static 'favicon.jpg' %}">
+    <title>TripWhiz</title></head>
+<body>
+    <h1>Find Trips Within Your Budget</h1>
+    <form action="{% url 'results' %}" method="get">
+        <label>Budget (INR):</label>
+        <input type="number" name="budget" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
