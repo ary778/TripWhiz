@@ -2,7 +2,7 @@ import requests
 from django.core.management.base import BaseCommand
 from travel.models import TravelOption
 
-API_KEY = "LnWxrtJb7sHkgGDNh8HnoE9TkyZSnzbrKqEnrFjsQoB16pHW3e9WLkZB"
+API_KEY = "INSERT-YOUR-API-KEY-HERE"
 HEADERS = {"Authorization": API_KEY}
 
 class Command(BaseCommand):
