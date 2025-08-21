@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Results - TripWhiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+    <header class="navbar solid">
+        <a href="{% url 'home' %}" class="logo">TripWhiz</a>
+        <nav class="nav-links">
+            <a href="{% url 'home' %}#popular-trips">Trips</a>
+            <a href="{% url 'home' %}#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section results-page">
+            <h2 id="results-title" class="section-title">Loading trips...</h2>
+            <p id="results-subtitle" class="section-subtitle">Please wait while we find the best destinations for you.</p>
+            
+            <div id="loader" class="loader"></div>
+            
+            <div id="results-container" class="results-grid">
+                </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; {% now "Y" %} TripWhiz. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/results_script.js' %}"></script>
+</body>
+</html>

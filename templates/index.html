@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripWhiz - Your Next Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="static-data" data-images-path="{% static 'images/' %}" style="display: none;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <header class="navbar">
+        <a href="{% url 'home' %}" class="logo">TripWhiz</a>
+        <nav class="nav-links">
+            <a href="#popular-trips">Trips</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Your Perfect Getaway, On Your Budget.</h1>
+                <h2>Tell us where you're starting from and how much you want to spend. We'll handle the rest.</h2>
+                <form class="search-box" action="{% url 'results' %}" method="GET">
+                    <div class="search-input">
+                        <i class="fas fa-plane-departure"></i>
+                        <input type="text" id="sourceCity" name="source" placeholder="Starting City or IATA Code (e.g., DXB)" required>
+                    </div>
+                    <div class="search-input">
+                        <i class="fas fa-dollar-sign"></i>
+                        <select id="budget" name="budget" required>
+                            <option value="" disabled selected>Select Budget</option>
+                            <option value="40000">Under ₹40,000</option>
+                            <option value="80000">Under ₹80,000</option>
+                            <option value="150000">Under ₹1,50,000</option>
+                        </select>
+                    </div>
+                    <div class="search-input">
+                        <i class="fas fa-tags"></i>
+                        <select id="category" name="category" required>
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="BEACH">Beach</option>
+                            <option value="HISTORIC">Historic</option>
+                            <option value="ADVENTURE">Adventure</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-cta">Show Me My Options</button>
+                </form>
+            </div>
+        </section>
+        <section id="popular-trips" class="section">
+            <h2 class="section-title">Trips From Major Cities</h2>
+            <p class="section-subtitle">Or, select a popular starting point to see all available destinations.</p>
+            <div id="source-container" class="results-grid"></div>
+        </section>
+        <section id="contact" class="section" style="background-color: var(--background-light);">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Have questions or suggestions? We'd love to hear from you!</p>
+            <a href="mailto:aryansuthar71@gmail.com">aryansuthar71@gmail.com</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; {% now "Y" %} TripWhiz. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'js/index_script.js' %}"></script>
+</body>
+</html>

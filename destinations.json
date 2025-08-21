@@ -1,0 +1,182 @@
+[
+  {
+    "city": "Rome",
+    "iata_code": "FCO",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Rome"
+  },
+  {
+    "city": "Athens",
+    "iata_code": "ATH",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Athens"
+  },
+  {
+    "city": "Cairo",
+    "iata_code": "CAI",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Cairo near Pyramids"
+  },
+  {
+    "city": "Kyoto",
+    "iata_code": "KIX",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Kyoto"
+  },
+  {
+    "city": "Cusco",
+    "iata_code": "CUZ",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Cusco for Machu Picchu"
+  },
+  {
+    "city": "Istanbul",
+    "iata_code": "IST",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Istanbul"
+  },
+  {
+    "city": "Siem Reap",
+    "iata_code": "REP",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels near Angkor Wat"
+  },
+  {
+    "city": "Beijing",
+    "iata_code": "PEK",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Beijing"
+  },
+  {
+    "city": "Jerusalem",
+    "iata_code": "TLV",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Jerusalem"
+  },
+  {
+    "city": "Mexico City",
+    "iata_code": "MEX",
+    "category": "HISTORIC",
+    "hotel_query": "Hotels in Mexico City"
+  },
+  {
+    "city": "Maldives",
+    "iata_code": "MLE",
+    "category": "BEACH",
+    "hotel_query": "Water villas in Maldives"
+  },
+  {
+    "city": "Phuket",
+    "iata_code": "HKT",
+    "category": "BEACH",
+    "hotel_query": "Resorts in Phuket"
+  },
+  {
+    "city": "Bali",
+    "iata_code": "DPS",
+    "category": "BEACH",
+    "hotel_query": "Hotels in Bali"
+  },
+  {
+    "city": "Mauritius",
+    "iata_code": "MRU",
+    "category": "BEACH",
+    "hotel_query": "Beach resorts in Mauritius"
+  },
+  {
+    "city": "Seychelles",
+    "iata_code": "SEZ",
+    "category": "BEACH",
+    "hotel_query": "Hotels in Seychelles"
+  },
+  {
+    "city": "Dubai",
+    "iata_code": "DXB",
+    "category": "BEACH",
+    "hotel_query": "Beach hotels in Dubai"
+  },
+  {
+    "city": "Krabi",
+    "iata_code": "KBV",
+    "category": "BEACH",
+    "hotel_query": "Hotels in Krabi"
+  },
+  {
+    "city": "Langkawi",
+    "iata_code": "LGK",
+    "category": "BEACH",
+    "hotel_query": "Hotels in Langkawi"
+  },
+  {
+    "city": "Fiji",
+    "iata_code": "NAN",
+    "category": "BEACH",
+    "hotel_query": "Resorts in Fiji"
+  },
+  {
+    "city": "Cancun",
+    "iata_code": "CUN",
+    "category": "BEACH",
+    "hotel_query": "All-inclusive resorts in Cancun"
+  },
+  {
+    "city": "Kathmandu",
+    "iata_code": "KTM",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels in Kathmandu"
+  },
+  {
+    "city": "Paro",
+    "iata_code": "PBH",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels in Paro Bhutan"
+  },
+  {
+    "city": "Zurich",
+    "iata_code": "ZRH",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels near Swiss Alps"
+  },
+  {
+    "city": "Banff",
+    "iata_code": "YYC",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels in Banff Canada"
+  },
+  {
+    "city": "Queenstown",
+    "iata_code": "ZQN",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels in Queenstown New Zealand"
+  },
+  {
+    "city": "Tbilisi",
+    "iata_code": "TBS",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels in Tbilisi Georgia"
+  },
+  {
+    "city": "Innsbruck",
+    "iata_code": "INN",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels in Innsbruck Austria"
+  },
+  {
+    "city": "Pokhara",
+    "iata_code": "PKR",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels in Pokhara Nepal"
+  },
+  {
+    "city": "Ha Giang",
+    "iata_code": "HAN",
+    "category": "MOUNTAIN",
+    "hotel_query": "Homestays in Ha Giang Vietnam"
+  },
+  {
+    "city": "Denver",
+    "iata_code": "DEN",
+    "category": "MOUNTAIN",
+    "hotel_query": "Hotels near Rocky Mountain National Park"
+  }
+]

@@ -15,10 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 # tripwhiz/urls.py
+
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('travel.urls')),  # This connects the travel app’s URLs
+    
+    # This correctly routes API calls like '/api/deals/'
+    path('api/', include('api.urls')),
+    
+    # This correctly routes webpage calls like '/' and '/results/'
+    path('', include('travel.urls')), 
 ]

@@ -1,23 +1,25 @@
+# In travel/views.py
 from django.shortcuts import render
-from .models import TravelOption
+from .models import Deal, Destination # Correctly import the new models
 
-def home(request):
-    return render(request, 'travel/budget_form.html')
-
-def results(request):
-    budget = request.GET.get("budget")
-    trips = []
-
-    if budget:
-        budget = float(budget)
-        all_options = TravelOption.objects.filter(
-            flight_price__isnull=False,
-            hotel_price__isnull=False
-        )
-        seen = set()
-        for option in sorted(all_options, key=lambda x: x.total_price()):
-            if option.city not in seen and option.total_price() <= budget:
-                trips.append(option)
-                seen.add(option.city)
-
-    return render(request, 'travel/results.html', {"results": trips, "budget": budget})
+def home_view(request):
+    """
+    This view gets all the pre-collected deals and destinations
+    from the database and sends them to the homepage template.
+    """
+    deals = Deal.objects.order_by('total_price')
+    destinations = Destination.objects.all()
+    
+    context = {
+        'deals': deals,
+        'destinations': destinations
+    }
+    
+    # You will need to create a 'home.html' template to display this data
+    return render(request, 'index.html', context)
+def results_view(request):
+    """
+    Renders the results page.
+    The actual search logic will be handled by your API and JavaScript for now.
+    """
+    return render(request, 'results.html')

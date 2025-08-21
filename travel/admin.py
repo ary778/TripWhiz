@@ -1,7 +1,6 @@
+# In travel/admin.py
 from django.contrib import admin
-from .models import TravelOption
+from .models import Destination, Deal
 
-@admin.register(TravelOption)
-class TravelOptionAdmin(admin.ModelAdmin):
-    list_display = ('city', 'iata', 'origin', 'flight_price', 'hotel_price', 'check_in', 'check_out')
-    list_filter = ('check_in', 'check_out')  # or remove if not needed
+admin.site.register(Destination)
+admin.site.register(Deal)
