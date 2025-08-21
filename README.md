@@ -5,17 +5,16 @@
 ##Features
 - Enter your budget
 - Get affordable travel destination suggestions
-- Realistic trip costs powered by scraped data of Google flight and Hotels
+- Realistic trip costs powered by SerpAPI
 - Destination images integrated from Pexel
-- Clean, responsive UI built with Tailwind and Bootstrap
 ---
 
 ##Tech Stack
 - **Backend**: Django (Python)
-- **Frontend**: HTML, CSS, Bootstrap, Tailwind CSS
-- **Data Handling**: Web scraping with BeautifulSoup
+- **Frontend**: HTML, CSS, JS
+- **API for Data**: SerpAPI
 - **Image API**: Pexel
-- **Database**: SQLite
+- **Database**: PostgreSQL
 ---
 
 ###Clone the repository
