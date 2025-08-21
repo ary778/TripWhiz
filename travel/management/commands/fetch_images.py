@@ -2,8 +2,14 @@
 import requests
 import os
 from django.core.management.base import BaseCommand
+
 from django.conf import settings
 from travel.models import Destination # UPDATED: Use the new Destination model
+from travel.models import TravelOption
+
+API_KEY = "INSERT-YOUR-API-KEY-HERE"
+HEADERS = {"Authorization": API_KEY}
+
 
 class Command(BaseCommand):
     help = "Fetches city images from Pexels API and updates Destination models"
